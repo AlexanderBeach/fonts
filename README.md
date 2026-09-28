@@ -73,9 +73,11 @@ tlmgr install erewhon erewhon-math xcharter xcharter-math euler-math fira firama
 
 Fira Code is not on CTAN. Install it from `fonts/fira-code` or point `fontspec` at the file.
 
-## LaTeX
+## Using them together in LaTeX
 
-`preamble.tex` holds this. Compile with LuaLaTeX.
+The maths fonts do nothing on their own; this is the setup that puts the whole set to work in
+one document. It needs LuaLaTeX (or XeLaTeX) and the fonts installed. The images above were
+typeset with exactly this.
 
 ```latex
 \usepackage{fontspec}
@@ -88,8 +90,28 @@ Fira Code is not on CTAN. Install it from `fonts/fira-code` or point `fontspec` 
                                \mathbfup/{greek,Greek}, \mathbfit/{greek,Greek}}]
 ```
 
+Line by line:
+
+- `fontspec` lets LaTeX use ordinary OpenType fonts by name; `unicode-math` does the same
+  for mathematics, using a font's built-in MATH table instead of the old TeX maths fonts.
+- `\setmainfont{Erewhon}` is the text face for body, italic and bold.
+- `\setsansfont{Fira Sans}` is used wherever a sans is asked for, such as headings in some
+  classes. `Scale=MatchLowercase` sizes it so its lowercase matches Erewhon's, since the two
+  faces have different natural sizes at the same point size.
+- `\setmonofont{Fira Code}` is the typewriter face for code. `Contextuals=Alternate` switches
+  on the ligatures, so `->` and `<=` are drawn as single signs; leave it out for plain
+  Fira Code.
+- `\setmathfont{Erewhon Math}` sets the maths font: operators, brackets, radicals, italic
+  variables, all matched to the text face.
+- The last line replaces only the Greek letters with Euler's. `range=` restricts the second
+  maths font to the listed characters, and each entry names an alphabet style (upright,
+  italic, bold upright, bold italic) followed by the character sets to take from it, here
+  lowercase and capital Greek. The plainer `range={greek,Greek}` does not work; the style
+  prefix is required.
+
 For XCharter, replace the two Erewhon lines with `XCharter` and `XCharter Math`. Delete the
-Euler line to keep the text face's own Greek.
+Euler line to keep the text face's own Greek. For slides in beamer, set Fira Sans as the main
+font and Fira Math as the maths font.
 
 ## Licences
 
