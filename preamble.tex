@@ -1,0 +1,20 @@
+% Fonts for papers, with Fira Sans for sans, Fira Code for code and Euler's Greek.
+% Compile with LuaLaTeX. The fonts must be installed (or loaded by file name with Path=).
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\setmainfont{Erewhon}
+\setsansfont{Fira Sans}[Scale=MatchLowercase]
+\setmonofont{Fira Code}[Scale=MatchLowercase, Contextuals=Alternate]
+\setmathfont{Erewhon Math}
+\setmathfont{Euler Math}[range={\mathup/{greek,Greek}, \mathit/{greek,Greek},
+                               \mathbfup/{greek,Greek}, \mathbfit/{greek,Greek}}]
+
+% The sturdier alternative: swap the two Erewhon lines for these.
+% \setmainfont{XCharter}
+% \setmathfont{XCharter Math}
+
+% Slides (beamer): sans throughout, with a maths font of the same design.
+% \setmainfont{Fira Sans}
+% \setmathfont{Fira Math}
