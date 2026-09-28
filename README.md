@@ -12,11 +12,6 @@ image of each in use, and a LaTeX preamble that sets them all up.
 | Slides and screen | Fira Sans with Fira Math | `fonts/fira-sans`, `fonts/fira-math` | OFL 1.1 |
 | Code | Fira Code, ligatures on | `fonts/fira-code` | OFL 1.1 |
 
-Two Microsoft faces belong with these but are not in the repository, because they cannot be
-redistributed: **Cambria with Cambria Math**, a proprietary alternative for papers that comes
-with Windows and Office (embedding in your own PDFs is permitted), and **Segoe UI** for
-anything Windows-native.
-
 ## The fonts in use
 
 ### Papers: Erewhon with Erewhon Math
@@ -63,12 +58,6 @@ Fira Mono with programming ligatures: `->`, `<=`, `!=` and `::` are drawn as sin
 and the zero is slashed.
 
 ![Fira Code in a listing inside an Erewhon paragraph](images/firacode-listing.png)
-
-### Not included: Cambria with Cambria Math
-
-Shown for comparison only. Use it from Windows; it is not in this repository.
-
-![Cambria with Cambria Math, body text of a paper](images/cambria-paper.png)
 
 ## Installing
 
