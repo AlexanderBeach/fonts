@@ -74,7 +74,7 @@ not the default.
 **Euler Math for Greek.** More Greek picks went to Euler than to any other family, and it
 is upright and calligraphic by design, so Greek does not read as sloped Latin.
 
-**Fira Sans with Fira Math for slides and screen.** Sans faces lost every prose test, so
+**FiraGO with Fira Math for slides and screen.** Sans faces lost every prose test, so
 they stay off papers. Fira has a proper maths companion in the same design, which is rare
 for a sans, and Fira Code was already the code font of choice.
 
@@ -86,7 +86,7 @@ for a sans, and Fira Code was already the code font of choice.
 - Computer Modern and Latin Modern took no letter picks at all.
 - New Computer Modern was rated highly when its name was shown and lost every blind
   pairing to Erewhon.
-- Sans faces (Inter, Source Sans, Fira Sans, Plex) came last for prose.
+- Sans faces (Inter, Source Sans, FiraGO, Plex) came last for prose.
 - Bookman, Concrete and DejaVu Serif failed the serif rules: blunt and heavy, sharp and
   mechanical, or too even.
 

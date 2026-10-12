@@ -9,7 +9,7 @@ image of each in use, and a LaTeX preamble that sets them all up.
 | Papers: mathematics | Erewhon Math | `fonts/erewhon-math` | OFL 1.1 |
 | Papers, sturdier alternative | XCharter with XCharter Math | `fonts/xcharter`, `fonts/xcharter-math` | Bitstream Charter licence (free); OFL 1.1 |
 | Greek in mathematics | Euler Math, Greek letters only | `fonts/euler-math` | OFL 1.1 |
-| Slides and screen | Fira Sans with Fira Math | `fonts/fira-sans`, `fonts/fira-math` | OFL 1.1 |
+| Slides and screen | FiraGO with Fira Math | `fonts/firago`, `fonts/fira-math` | OFL 1.1 |
 | Code | Fira Code, ligatures on | `fonts/fira-code` | OFL 1.1 |
 
 ## The fonts in use
@@ -43,14 +43,15 @@ own maths font.
 
 ![Greek from Euler Math inside Erewhon mathematics](images/euler-greek.png)
 
-### Slides and screen: Fira Sans with Fira Math
+### Slides and screen: FiraGO with Fira Math
 
 A humanist sans for slides and on-screen tables, with a proper maths companion in the same
-design, which is rare for a sans.
+design, which is rare for a sans. Besides Latin, Greek and Cyrillic it covers Arabic,
+Devanagari, Georgian, Hebrew and Thai.
 
-![Fira Sans and Fira Math on a slide](images/fira-slide.png)
+![FiraGO and Fira Math on a slide](images/fira-slide.png)
 
-![Fira Sans in a diagnostics table at screen sizes](images/fira-screen.png)
+![FiraGO in a diagnostics table at screen sizes](images/fira-screen.png)
 
 ### Code: Fira Code
 
@@ -64,14 +65,15 @@ and the zero is slashed.
 **Windows.** Open a folder under `fonts`, select all the `.otf` or `.ttf` files, right-click,
 Install. Do this for each folder you want available to Word, browsers and LuaLaTeX by name.
 
-**TeX Live.** All but Fira Code are on CTAN; installing the packages also gives you the LaTeX
-support files:
+**TeX Live.** All but FiraGO and Fira Code are on CTAN; installing the packages also gives you
+the LaTeX support files:
 
 ```bash
-tlmgr install erewhon erewhon-math xcharter xcharter-math euler-math fira firamath
+tlmgr install erewhon erewhon-math xcharter xcharter-math euler-math firamath
 ```
 
-Fira Code is not on CTAN. Install it from `fonts/fira-code` or point `fontspec` at the file.
+FiraGO and Fira Code are not on CTAN. Install them from `fonts/firago` and `fonts/fira-code`,
+or point `fontspec` at the files.
 
 ## Using them together in LaTeX
 
@@ -83,7 +85,7 @@ typeset with exactly this.
 \usepackage{fontspec}
 \usepackage{unicode-math}
 \setmainfont{Erewhon}
-\setsansfont{Fira Sans}[Scale=MatchLowercase]
+\setsansfont{FiraGO}[Scale=MatchLowercase]
 \setmonofont{Fira Code}[Scale=MatchLowercase, Contextuals=Alternate]
 \setmathfont{Erewhon Math}
 \setmathfont{Euler Math}[range={\mathup/{greek,Greek}, \mathit/{greek,Greek},
@@ -95,7 +97,7 @@ Line by line:
 - `fontspec` lets LaTeX use ordinary OpenType fonts by name; `unicode-math` does the same
   for mathematics, using a font's built-in MATH table instead of the old TeX maths fonts.
 - `\setmainfont{Erewhon}` is the text face for body, italic and bold.
-- `\setsansfont{Fira Sans}` is used wherever a sans is asked for, such as headings in some
+- `\setsansfont{FiraGO}` is used wherever a sans is asked for, such as headings in some
   classes. `Scale=MatchLowercase` sizes it so its lowercase matches Erewhon's, since the two
   faces have different natural sizes at the same point size.
 - `\setmonofont{Fira Code}` is the typewriter face for code. `Contextuals=Alternate` switches
@@ -110,14 +112,14 @@ Line by line:
   prefix is required.
 
 For XCharter, replace the two Erewhon lines with `XCharter` and `XCharter Math`. Delete the
-Euler line to keep the text face's own Greek. For slides in beamer, set Fira Sans as the main
+Euler line to keep the text face's own Greek. For slides in beamer, set FiraGO as the main
 font and Fira Math as the maths font.
 
 ## Licences
 
 Every font here is free to use, copy and redistribute under the licence in its folder:
 
-- Erewhon and Erewhon Math, XCharter Math, Euler Math, Fira Sans, Fira Math, Fira Code: SIL
+- Erewhon and Erewhon Math, XCharter Math, Euler Math, FiraGO, Fira Math, Fira Code: SIL
   Open Font License 1.1. The fonts may not be sold on their own and the licence must travel
   with them, as it does here.
 - XCharter text fonts: the Bitstream Charter free licence, reproduced in

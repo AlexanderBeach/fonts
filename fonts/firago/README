@@ -1,0 +1,21 @@
+This folder holds FiraGO, version 1.001, as OpenType (CFF) fonts.
+
+FiraGO is a humanist sans by Carrois Corporate and bBox Type, built on
+Fira Sans 4.3, which Erik Spiekermann and Ralph du Carrois designed for
+Mozilla. Its Latin, Greek and Cyrillic are the same as Fira Sans 4.3, and
+it adds Arabic, Devanagari, Georgian, Hebrew and Thai.
+
+The family has fifteen weights, each with an italic. Eight of those thirty
+styles are included here: Light, Regular, SemiBold and Bold, each with its
+italic. The others are in the source repository.
+
+The fonts were obtained from
+
+https://github.com/bBoxType/FiraGO
+
+(folder Fonts/FiraGO_OTF_1001) and are licensed under the SIL Open Font
+License, version 1.1, with Reserved Font Name "Fira". The licence text is
+in LICENSE.
+
+FiraGO is not on CTAN, so there is no LaTeX package for it. With LuaLaTeX
+or XeLaTeX, load it through fontspec by its family name, FiraGO.
