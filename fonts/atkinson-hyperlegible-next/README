@@ -22,7 +22,6 @@ version 1.1. The licence text is in OFL.txt.
 
 The atkinson package on CTAN provides LaTeX support for it, through
 \usepackage{atkinson}. That package bundles the Braille Institute's own
-build of the fonts, under the Braille Institute's licence rather than
-the OFL, with the same family name as the files here. With LuaLaTeX or
-XeLaTeX it can also be loaded through fontspec by its family name,
-Atkinson Hyperlegible Next.
+build of the fonts, with the same family name as the files here. With
+LuaLaTeX or XeLaTeX it can also be loaded through fontspec by its family
+name, Atkinson Hyperlegible Next.
