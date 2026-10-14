@@ -128,14 +128,10 @@ FiraGO line with `\setsansfont{Atkinson Hyperlegible Next}[Scale=MatchLowercase]
 
 ## Licences
 
-Every font here is free to use, copy and redistribute under the licence in its folder:
+Each font's licence is in its folder:
 
 - Erewhon and Erewhon Math, XCharter Math, Euler Math, FiraGO, Fira Math, Fira Code,
-  Atkinson Hyperlegible Next: SIL Open Font License 1.1. The fonts may not be sold on
-  their own and the licence must travel with them, as it does here.
-- XCharter text fonts: the Bitstream Charter free licence, reproduced in
-  `fonts/xcharter/README`, which permits use, copying, modification and redistribution with
-  the copyright notice and trademark acknowledgement. Bitstream Charter is a registered
-  trademark of Bitstream Inc.
+  Atkinson Hyperlegible Next: SIL Open Font License 1.1.
+- XCharter text fonts: the Bitstream Charter free licence, in `fonts/xcharter/README`.
 
 The LaTeX support files of the CTAN packages are not included; `tlmgr` provides them.
