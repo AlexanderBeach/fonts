@@ -10,6 +10,7 @@ image of each in use, and a LaTeX preamble that sets them all up.
 | Papers, sturdier alternative | XCharter with XCharter Math | `fonts/xcharter`, `fonts/xcharter-math` | Bitstream Charter licence (free); OFL 1.1 |
 | Greek in mathematics | Euler Math, Greek letters only | `fonts/euler-math` | OFL 1.1 |
 | Slides and screen | FiraGO with Fira Math | `fonts/firago`, `fonts/fira-math` | OFL 1.1 |
+| Legibility, for low vision | Atkinson Hyperlegible Next | `fonts/atkinson-hyperlegible-next` | OFL 1.1 |
 | Code | Fira Code, ligatures on | `fonts/fira-code` | OFL 1.1 |
 
 ## The fonts in use
@@ -53,6 +54,15 @@ Devanagari, Georgian, Hebrew and Thai.
 
 ![FiraGO in a diagnostics table at screen sizes](images/fira-screen.png)
 
+### Legibility: Atkinson Hyperlegible Next
+
+A sans from the Braille Institute, drawn by Applied Design Works and Letters from Sweden for
+readers with low vision. Letters that are easily mistaken for one another, such as I, l and 1
+or O and 0, are given distinct shapes. Seven weights, each with an italic, but Latin only: no
+Greek alphabet, and no maths companion.
+
+![Atkinson Hyperlegible Next in a diagnostics table at screen sizes](images/atkinson-screen.png)
+
 ### Code: Fira Code
 
 Fira Mono with programming ligatures: `->`, `<=`, `!=` and `::` are drawn as single signs,
@@ -69,7 +79,7 @@ Install. Do this for each folder you want available to Word, browsers and LuaLaT
 the LaTeX support files:
 
 ```bash
-tlmgr install erewhon erewhon-math xcharter xcharter-math euler-math firamath
+tlmgr install erewhon erewhon-math xcharter xcharter-math euler-math firamath atkinson
 ```
 
 FiraGO and Fira Code are not on CTAN. Install them from `fonts/firago` and `fonts/fira-code`,
@@ -113,15 +123,16 @@ Line by line:
 
 For XCharter, replace the two Erewhon lines with `XCharter` and `XCharter Math`. Delete the
 Euler line to keep the text face's own Greek. For slides in beamer, set FiraGO as the main
-font and Fira Math as the maths font.
+font and Fira Math as the maths font. For Atkinson Hyperlegible Next as the sans, replace the
+FiraGO line with `\setsansfont{Atkinson Hyperlegible Next}[Scale=MatchLowercase]`.
 
 ## Licences
 
 Every font here is free to use, copy and redistribute under the licence in its folder:
 
-- Erewhon and Erewhon Math, XCharter Math, Euler Math, FiraGO, Fira Math, Fira Code: SIL
-  Open Font License 1.1. The fonts may not be sold on their own and the licence must travel
-  with them, as it does here.
+- Erewhon and Erewhon Math, XCharter Math, Euler Math, FiraGO, Fira Math, Fira Code,
+  Atkinson Hyperlegible Next: SIL Open Font License 1.1. The fonts may not be sold on
+  their own and the licence must travel with them, as it does here.
 - XCharter text fonts: the Bitstream Charter free licence, reproduced in
   `fonts/xcharter/README`, which permits use, copying, modification and redistribution with
   the copyright notice and trademark acknowledgement. Bitstream Charter is a registered

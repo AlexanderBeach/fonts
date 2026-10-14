@@ -1,0 +1,28 @@
+This folder holds Atkinson Hyperlegible Next, version 2.001, as OpenType
+(CFF) fonts.
+
+Atkinson Hyperlegible Next is a sans from the Braille Institute, drawn by
+Applied Design Works and Letters from Sweden for readers with low vision.
+Letters that are easily mistaken for one another, such as I, l and 1 or
+O and 0, are given distinct shapes. It covers Latin only, with no Greek
+alphabet or Cyrillic.
+
+The family has seven weights, ExtraLight, Light, Regular, Medium,
+SemiBold, Bold and ExtraBold, each with an italic, and all fourteen
+styles are included here. Regular, Bold and their
+italics share the family name Atkinson Hyperlegible Next; the other
+weights are found by names such as Atkinson Hyperlegible Next Medium.
+
+The fonts were obtained from
+
+https://github.com/googlefonts/atkinson-hyperlegible-next
+
+(folder fonts/otf) and are licensed under the SIL Open Font License,
+version 1.1. The licence text is in OFL.txt.
+
+The atkinson package on CTAN provides LaTeX support for it, through
+\usepackage{atkinson}. That package bundles the Braille Institute's own
+build of the fonts, under the Braille Institute's licence rather than
+the OFL, with the same family name as the files here. With LuaLaTeX or
+XeLaTeX it can also be loaded through fontspec by its family name,
+Atkinson Hyperlegible Next.
