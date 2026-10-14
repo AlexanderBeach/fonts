@@ -16,8 +16,7 @@ The fonts were obtained from
 https://github.com/bBoxType/FiraGO
 
 (folder Fonts/FiraGO_OTF_1001) and are licensed under the SIL Open Font
-License, version 1.1, with Reserved Font Name "Fira". The licence text is
-in LICENSE.
+License, version 1.1. The licence text is in LICENSE.
 
 FiraGO is not on CTAN, so there is no LaTeX package for it. With LuaLaTeX
 or XeLaTeX, load it through fontspec by its family name, FiraGO.
